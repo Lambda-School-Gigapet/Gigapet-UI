@@ -1,0 +1,87 @@
+#gigaHero{
+    .flexFlex(center,center);
+    flex-direction: column-reverse;
+    text-align: center;
+
+    @media (@desktop){
+        flex-direction: row;
+        padding-top: 9%;
+    }
+
+
+}
+
+    .desktopBanner{
+        display:none;
+    
+        @media (@desktop){
+            display: inline;
+            height: 250px;
+            width: 100%;
+            border-top: 2px solid @borderColor;
+            padding-top: .5%;
+        }
+    }
+
+
+#gigaFeature{
+    .flexFlex(center,center);
+    flex-direction: column;
+    text-align: center;
+    border-top: 2px solid @borderColor;
+    border-bottom: 2px solid @borderColor; 
+
+    @media (@tablet){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width:70px;
+    }
+    div{
+        width: 60%;
+        padding:5%;
+        border-bottom: 1px dashed @borderColor;
+
+        @media (@tablet){
+            width: 50%;
+            height: 200px;
+        }
+
+        @media (@desktop){
+            width: 30%;
+            height: 250px;
+        }
+
+    }
+    .featPet, .featEasy, .featUse, .featNew{
+        @media (@desktop){
+            border: none;
+        }
+    }
+    .featMulti{
+        @media (@tablet){
+            border: none;
+        }
+    }
+    .featCloud{
+        border: none;
+    }
+}
+
+#gigaAbout{
+    padding:4% 2%;
+
+    @media (@tablet){
+        padding: 2%;
+    }
+    
+    h2{
+        padding: 3% 0;
+    }
+}
+
+footer{
+    border-top: 2px solid @borderColor;
+}
