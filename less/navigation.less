@@ -27,9 +27,14 @@
             .flexFlex(space-evenly, center);
             width: 70%;
         }
+
+        @media (@desktop){
+            width: 40%;
+        }
         a{
             color: @fontColor;
             font-size: 1.8rem;
+            font-family: @navFont;
             text-decoration: none;
 
             @media (@tablet){

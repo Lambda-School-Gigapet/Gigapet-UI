@@ -134,14 +134,15 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Hammersmith One, sans-serif;
+  background-color: #f1edec;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: Sigmar One, cursive;
 }
 h1 {
   font-size: 3.6rem;
@@ -149,6 +150,11 @@ h1 {
 h2 {
   font-size: 2rem;
   padding-bottom: 2%;
+}
+@media (min-width:550px) {
+  h2 {
+    font-size: 2.4rem;
+  }
 }
 h3 {
   font-size: 2rem;
@@ -168,7 +174,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
@@ -178,7 +184,7 @@ img {
   align-items: center;
   flex-direction: column;
   background-color: #8789C0;
-  border-bottom: 2px solid #9BD1E5;
+  border-bottom: 2px solid #000000;
   position: fixed;
   top: 0;
   height: 9%;
@@ -209,9 +215,15 @@ img {
     width: 70%;
   }
 }
+@media (min-width:850px) {
+  .gigaNav nav {
+    width: 40%;
+  }
+}
 .gigaNav nav a {
   color: #000000;
   font-size: 1.8rem;
+  font-family: Livvic, sans-serif;
   text-decoration: none;
 }
 @media (min-width:550px) {
@@ -241,12 +253,27 @@ img {
   align-items: center;
   flex-direction: column-reverse;
   text-align: center;
+  padding-top: 9%;
 }
 @media (min-width:850px) {
   #gigaHero {
     flex-direction: row;
-    padding-top: 9%;
   }
+}
+#gigaHero button {
+  text-align: center;
+  white-space: nowrap;
+  color: #000000;
+  background-color: #8789C0;
+  border: 1px solid #000000;
+  padding: 1.5% 5%;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: Livvic, sans-serif;
+  margin: 2% 0;
+}
+#gigaHero button:hover {
+  background-color: #9BD1E5;
 }
 .desktopBanner {
   display: none;
@@ -254,10 +281,8 @@ img {
 @media (min-width:850px) {
   .desktopBanner {
     display: inline;
-    height: 250px;
     width: 100%;
     border-top: 2px solid #000000;
-    padding-top: 0.5%;
   }
 }
 #gigaFeature {
@@ -268,6 +293,7 @@ img {
   text-align: center;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
+  background-color: #E2856E;
 }
 @media (min-width:550px) {
   #gigaFeature {
@@ -311,17 +337,40 @@ img {
 #gigaFeature .featCloud {
   border: none;
 }
-#gigaAbout {
+#gigaAbout div {
   padding: 4% 2%;
 }
 @media (min-width:550px) {
-  #gigaAbout {
+  #gigaAbout div {
     padding: 2%;
   }
 }
-#gigaAbout h2 {
+#gigaAbout div h2 {
   padding: 3% 0;
+}
+#gigaAbout .aboutBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gigaAbout .aboutBtn button {
+  text-align: center;
+  white-space: nowrap;
+  color: #000000;
+  background-color: #8789C0;
+  border: 1px solid #000000;
+  padding: 1.5% 5%;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: Livvic, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gigaAbout .aboutBtn button:hover {
+  background-color: #9BD1E5;
 }
 footer {
   border-top: 2px solid #000000;
+  background-color: #8789C0;
 }

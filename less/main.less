@@ -2,11 +2,23 @@
     .flexFlex(center,center);
     flex-direction: column-reverse;
     text-align: center;
+    padding-top: 9%;
 
     @media (@desktop){
         flex-direction: row;
-        padding-top: 9%;
     }
+
+
+    button{
+        .btnBtn();
+        margin: 2% 0;
+
+        &:hover{
+            background-color: @buttonHover;
+        }
+    }
+
+
 
 
 }
@@ -16,10 +28,8 @@
     
         @media (@desktop){
             display: inline;
-            height: 250px;
             width: 100%;
             border-top: 2px solid @borderColor;
-            padding-top: .5%;
         }
     }
 
@@ -30,6 +40,7 @@
     text-align: center;
     border-top: 2px solid @borderColor;
     border-bottom: 2px solid @borderColor; 
+    background-color: @featBackground;
 
     @media (@tablet){
         flex-direction: row;
@@ -71,17 +82,29 @@
 }
 
 #gigaAbout{
-    padding:4% 2%;
 
-    @media (@tablet){
-        padding: 2%;
-    }
+    div{
+        padding:4% 2%;
+
+        @media (@tablet){
+            padding: 2%;
+        }
     
-    h2{
-        padding: 3% 0;
+        h2{
+            padding: 3% 0;
+        }
+    }
+    .aboutBtn{
+        .flexFlex(center,center);
+
+        button{
+            .btnBtn;
+            .flexFlex(center,center);
+            
+            &:hover{
+                background-color: @buttonHover;
+            }
+        }
     }
 }
 
-footer{
-    border-top: 2px solid @borderColor;
-}
