@@ -1,0 +1,58 @@
+.gigaNav{
+    .flexFlex(@justice:center, @align:center);
+    flex-direction: column;
+    background-color: @navBg;
+    border-bottom: 2px solid @navBorder;
+    position: fixed;
+    top: 0;
+    height: 9%;
+    width: 100%;
+
+    @media (@tablet){
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    h1{
+        text-align: center;
+        width: 50%;
+        padding-bottom: 2%;
+
+        @media (@tablet){
+            padding-top: 2%;
+            width: 15%;
+        }
+    }
+    nav{
+        @media (@tablet){
+            .flexFlex(space-evenly, center);
+            width: 70%;
+        }
+
+        @media (@desktop){
+            width: 40%;
+        }
+        a{
+            color: @fontColor;
+            font-size: 1.8rem;
+            font-family: @navFont;
+            text-decoration: none;
+
+            @media (@tablet){
+                font-size: 2rem;
+            }
+
+            &:hover{
+                background-color: @navLink;
+                border-radius: 5px;
+            }
+        }
+        .navH, .navF, .navA{
+            display: none;
+
+            @media (@tablet){
+                display: inline;
+            }
+        }
+    }
+}
+

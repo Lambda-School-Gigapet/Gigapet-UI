@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  html, body {
+    font-family: @textFont;
+    background-color: @globalBg;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: @titleFont;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 2%;
+
+    @media (@tablet){
+      font-size: 2.4rem;
+    }
+  }
+
+  h3{
+    font-size: 2rem;
+    padding-bottom: 2%;
+  }
+   
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+
+    @media (@tablet){
+      font-size: 1.5rem;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
