@@ -135,14 +135,14 @@ html {
 html,
 body {
   font-family: Hammersmith One, sans-serif;
-  background-color: #f1edec;
+  background-color: #FFFFFF;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: Sigmar One, cursive;
+  font-family: M PLUS 1p, sans-serif;
 }
 h1 {
   font-size: 3.6rem;
@@ -183,9 +183,11 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #8789C0;
-  border-bottom: 2px solid #000000;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-bottom: 3px solid #4d5094;
   position: fixed;
+  z-index: 2;
   top: 0;
   height: 9%;
   width: 100%;
@@ -221,7 +223,7 @@ img {
   }
 }
 .gigaNav nav a {
-  color: #000000;
+  color: #FFFFFF;
   font-size: 1.8rem;
   font-family: Livvic, sans-serif;
   text-decoration: none;
@@ -232,8 +234,7 @@ img {
   }
 }
 .gigaNav nav a:hover {
-  background-color: #9BD1E5;
-  border-radius: 5px;
+  background-color: #8789C0;
 }
 .gigaNav nav .navH,
 .gigaNav nav .navF,
@@ -247,42 +248,34 @@ img {
     display: inline;
   }
 }
-#gigaHero {
+.gigaHero {
+  height: 500px;
+}
+.gigaHero .imgHero {
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img\strawberry.jpg");
+}
+.gigaHero .textHero {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
   text-align: center;
-  padding-top: 9%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gigaHero .textHero p {
+  font-family: M PLUS 1p, sans-serif;
+  font-size: 4rem;
+  color: #FFFFFF;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.7);
 }
 @media (min-width:850px) {
-  #gigaHero {
-    flex-direction: row;
-  }
-}
-#gigaHero button {
-  text-align: center;
-  white-space: nowrap;
-  color: #000000;
-  background-color: #8789C0;
-  border: 1px solid #000000;
-  padding: 1.5% 5%;
-  font-size: 2rem;
-  border-radius: 10px;
-  font-family: Livvic, sans-serif;
-  margin: 2% 0;
-}
-#gigaHero button:hover {
-  background-color: #9BD1E5;
-}
-.desktopBanner {
-  display: none;
-}
-@media (min-width:850px) {
-  .desktopBanner {
-    display: inline;
-    width: 100%;
-    border-top: 2px solid #000000;
+  .gigaHero .textHero p {
+    white-space: nowrap;
   }
 }
 #gigaFeature {
@@ -293,12 +286,17 @@ img {
   text-align: center;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
-  background-color: #E2856E;
+  background-color: #f5f5f5;
 }
 @media (min-width:550px) {
   #gigaFeature {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+@media (min-width:850px) {
+  #gigaFeature {
+    border-top: 0;
   }
 }
 #gigaFeature img {
@@ -337,6 +335,37 @@ img {
 #gigaFeature .featCloud {
   border: none;
 }
+#gigaSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+@media (min-width:850px) {
+  #gigaSign {
+    flex-direction: row;
+  }
+}
+#gigaSign button {
+  text-align: center;
+  white-space: nowrap;
+  color: #000000;
+  background-color: #8789C0;
+  border: 1px solid #000000;
+  padding: 1.5% 5%;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: Livvic, sans-serif;
+  margin: 2% 0;
+}
+#gigaSign button:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+#gigaAbout {
+  background-color: #f5f5f5;
+}
 #gigaAbout div {
   padding: 4% 2%;
 }
@@ -368,9 +397,11 @@ img {
   align-items: center;
 }
 #gigaAbout .aboutBtn button:hover {
-  background-color: #9BD1E5;
+  color: #FFFFFF;
+  background-color: #000000;
 }
 footer {
-  border-top: 2px solid #000000;
-  background-color: #8789C0;
+  border-top: 2px solid #4d5094;
+  background-color: #000000;
+  color: #FFFFFF;
 }

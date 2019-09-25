@@ -1,9 +1,11 @@
 .gigaNav{
     .flexFlex(@justice:center, @align:center);
     flex-direction: column;
+    color: @navText;
     background-color: @navBg;
-    border-bottom: 2px solid @navBorder;
+    border-bottom: 3px solid @navBorder;
     position: fixed;
+    z-index: 2;
     top: 0;
     height: 9%;
     width: 100%;
@@ -32,7 +34,7 @@
             width: 40%;
         }
         a{
-            color: @fontColor;
+            color: @navText;
             font-size: 1.8rem;
             font-family: @navFont;
             text-decoration: none;
@@ -43,7 +45,7 @@
 
             &:hover{
                 background-color: @navLink;
-                border-radius: 5px;
+                // border-radius: 5px;
             }
         }
         .navH, .navF, .navA{
