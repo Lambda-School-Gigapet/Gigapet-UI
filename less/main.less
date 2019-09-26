@@ -4,7 +4,8 @@
     .imgHero{
         height: 500px;
         width: 100%;
-        border-bottom: 2px solid @borderColor;
+        object-fit: cover;
+        // border-bottom: 2px solid @borderColor;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img\strawberry.jpg");
     }
 
@@ -19,15 +20,13 @@
             font-family: @heroFont;
             font-size: 4rem;
             color: @heroText;
-            background: rgb(0, 0, 0); 
-            background: rgba(0, 0, 0, 0.7);
+            text-shadow: 2px 2px 2px #000000;
 
             @media (@desktop){
                 white-space: nowrap;
             }
         }
     }
-
 }
 
 
@@ -35,7 +34,7 @@
     .flexFlex(center,center);
     flex-direction: column;
     text-align: center;
-    border-bottom: 2px solid @borderColor; 
+    // border-bottom: 2px solid @borderColor; 
     background-color: @featBackground;
 
     @media (@tablet){
@@ -81,7 +80,7 @@
     .flexFlex(center,center);
     flex-direction: column-reverse;
     text-align: center;
-
+    padding-top: 3%;
     @media (@desktop){
         flex-direction: row;
     }

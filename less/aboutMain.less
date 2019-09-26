@@ -17,10 +17,12 @@
 
         @media (@tablet){
             height: 600px;
+            object-fit: cover;
         }
 
         @media (@desktop){
-            width: 70%
+            width: 100%;
+            object-position: 100% 0;
         }
     }
     .heroText{
@@ -38,8 +40,7 @@
             font-size: 4rem;
             color: @heroText;
             white-space: nowrap;
-            background: rgb(0, 0, 0); 
-            background: rgba(0, 0, 0, 0.7);
+            text-shadow: 2px 2px 2px #000000;
 
             @media (@tablet){
                 font-size: 5rem;
@@ -49,6 +50,7 @@
 }
 
 .container{
+    max-width: 800px;
     padding-bottom: 10%;
 }
 .person, .person2{
@@ -58,6 +60,11 @@
     margin: 2% 0;
     text-align: center;
     border: 1px dashed @borderColor;
+    border-radius: 15px;
+
+    @media (@tablet){
+        flex-direction: row-reverse;
+    }
 
     h1{
         font-size: 2.2rem;
@@ -71,6 +78,8 @@
 
     img{
         width:20%;
+        margin-left: 5%;
+        border: 2px solid @black;
     }
 
     p{

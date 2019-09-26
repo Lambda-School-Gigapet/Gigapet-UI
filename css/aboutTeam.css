@@ -174,7 +174,6 @@ img {
   height: auto;
 }
 .container {
-  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
@@ -276,11 +275,13 @@ a {
 @media (min-width:550px) {
   .aboutHero img {
     height: 600px;
+    object-fit: cover;
   }
 }
 @media (min-width:850px) {
   .aboutHero img {
-    width: 70%;
+    width: 100%;
+    object-position: 100% 0;
   }
 }
 .aboutHero .heroText {
@@ -300,8 +301,7 @@ a {
   font-size: 4rem;
   color: #FFFFFF;
   white-space: nowrap;
-  background: #000000;
-  background: rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 2px #000000;
 }
 @media (min-width:550px) {
   .aboutHero .heroText p {
@@ -309,6 +309,7 @@ a {
   }
 }
 .container {
+  max-width: 800px;
   padding-bottom: 10%;
 }
 .person,
@@ -321,6 +322,13 @@ a {
   margin: 2% 0;
   text-align: center;
   border: 1px dashed #000000;
+  border-radius: 15px;
+}
+@media (min-width:550px) {
+  .person,
+  .person2 {
+    flex-direction: row-reverse;
+  }
 }
 .person h1,
 .person2 h1 {
@@ -334,6 +342,8 @@ a {
 .person img,
 .person2 img {
   width: 20%;
+  margin-left: 5%;
+  border: 2px solid #000000;
 }
 .person p,
 .person2 p {
