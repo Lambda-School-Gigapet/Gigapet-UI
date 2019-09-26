@@ -178,6 +178,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
 .gigaNav {
   display: flex;
   justify-content: center;
@@ -336,6 +339,7 @@ img {
 .person2 p {
   text-align: center;
   width: 100%;
+  padding: 2%;
 }
 .person2 {
   background-color: #f5f5f5;

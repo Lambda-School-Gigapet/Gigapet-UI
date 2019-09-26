@@ -178,6 +178,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
 .gigaNav {
   display: flex;
   justify-content: center;
@@ -340,6 +343,7 @@ img {
   }
 }
 #gigaSign button {
+  text-decoration: none;
   text-align: center;
   white-space: nowrap;
   color: #000000;
@@ -375,6 +379,7 @@ img {
   align-items: center;
 }
 #gigaAbout .aboutBtn button {
+  text-decoration: none;
   text-align: center;
   white-space: nowrap;
   color: #000000;
