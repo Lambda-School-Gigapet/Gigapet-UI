@@ -1,0 +1,85 @@
+.aboutHero{
+    width: 100%;
+    height: 400px;
+
+    @media (@tablet){
+        height: 600px;
+    }
+
+    @media (@desktop){
+        .flexFlex(center,center);
+        height: 700px;
+    }
+    img{
+        height: 400px;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img\strawberry.jpg");
+
+        @media (@tablet){
+            height: 600px;
+        }
+
+        @media (@desktop){
+            width: 70%
+        }
+    }
+    .heroText{
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (@tablet){
+            top: 50%;
+        }
+        p{
+            font-family: @heroFont;
+            font-size: 4rem;
+            color: @heroText;
+            white-space: nowrap;
+            background: rgb(0, 0, 0); 
+            background: rgba(0, 0, 0, 0.7);
+
+            @media (@tablet){
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+.container{
+    padding-bottom: 10%;
+}
+.person, .person2{
+    .flexFlex(center,center);
+    flex-direction: column-reverse;
+    padding: 5% 0;
+    margin: 2% 0;
+    text-align: center;
+    border: 1px dashed @borderColor;
+
+    h1{
+        font-size: 2.2rem;
+        padding: 2% 0;
+
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    img{
+        width:20%;
+    }
+
+    p{
+        text-align: center;
+        width:100%;
+        padding: 2%;
+    }
+}
+
+.person2{
+    background-color: @aboutColor;
+}
